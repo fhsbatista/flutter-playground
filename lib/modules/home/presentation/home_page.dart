@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_playground/modules/home/domain/usecases/get_features_usecase.dart';
 import 'package:flutter_playground/modules/home/presentation/home_cubit.dart';
 import 'package:flutter_playground/modules/home/presentation/home_state.dart';
 import 'package:flutter_playground/modules/qrcode/presentation/qrcode_page.dart';
