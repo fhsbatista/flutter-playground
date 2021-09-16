@@ -18,6 +18,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
+  # Nuvigator still doesn not provide sound nullsafety support
+  # Therefore, you need to add the args "--no-sound-null-safety" when running the project.
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
