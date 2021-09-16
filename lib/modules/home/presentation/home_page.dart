@@ -4,6 +4,7 @@ import 'package:flutter_playground/modules/home/domain/usecases/get_features_use
 import 'package:flutter_playground/modules/home/presentation/home_cubit.dart';
 import 'package:flutter_playground/modules/home/presentation/home_state.dart';
 import 'package:flutter_playground/modules/qrcode/presentation/qrcode_page.dart';
+import 'package:stark/stark.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => HomeCubit(GetFeaturesUsecase()),
+      create: (_) => Stark.get<HomeCubit>(),
       child: Scaffold(
         appBar: AppBar(title: Text('Flutter playground')),
         body: BlocBuilder<HomeCubit, HomeState>(
